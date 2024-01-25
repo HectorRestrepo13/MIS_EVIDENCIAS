@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taller 2</title>
+</head>
+<body>
+    <div class="divBodyBlock">
+        <div class="divTextCenter">
+            <h1>Taller 2 - John Freddy Rivera</h1>
+        </div>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #1</h2>
+            <p>Un algoritmo que calcule el diametro, la longitud de una circunferencia y el área del circulo.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Radio:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio1" id="inptEjercicio1">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio1()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer1.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #2</h2>
+            <p>Valor de dos números cualquiera de las siguientes operaciones: suma, resta, multiplicación, división y residuo o módulo de la división.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Primer Valor:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio2Valor1" id="inptEjercicio2Valor1">
+                <label>Segundo Valor:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio2Valor2" id="inptEjercicio2Valor2">
+                <select name="operaciones" id="operaciones">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">Division</option>
+                    <option value="modulo">Modulo</option>
+                </select>
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio2()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer2.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #3</h2>
+            <p>Un algoritmo que dadas las horas trabajadas de una persona y el valor por hora calcule su salario y lo imprima.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Horas Trabajadas:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio3horasTrabajadas" id="inptEjercicio3horasTrabajadas">
+                <label>Valor x Hora:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio3valorPorHora" id="inptEjercicio3valorPorHora">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio3()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer3.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #4</h2>
+            <p>Un algoritmo que calcula el área de un trapecio.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Base Mayor:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio4baseMayor" id="inptEjercicio4baseMayor">
+                <label>Base Menor:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio4baseMenor" id="inptEjercicio4baseMenor">
+                <label>Altura:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio4altura" id="inptEjercicio4altura">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio4()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer4.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #5</h2>
+            <p>Un algoritmo que determina cuanto debe pagar un cliente por el estacionamiento de su vehículo, conociendo el tiempo de estacionamiento en horas y minutos.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Horas Estacionado:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio5horas" id="inptEjercicio5horas">
+                <label>Minutos Estacionado:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio5minutos" id="inptEjercicio5minutos">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio5()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer5.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #6</h2>
+            <p>Un algoritmo que determina si un número es o no es, par positivo.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Numero:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio6numero" id="inptEjercicio6numero">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio6()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer6.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #7</h2>
+            <p>Un algoritmo que determina el monto de la compra, el monto del descuento, el monto a pagar y el número de unidades de obsequio por la compra de cierta cantidad de docenas del producto.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Nombre del Producto:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio7productoNombre" id="inptEjercicio7productoNombre">
+                <label>Precio:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio7productoPrecio" id="inptEjercicio7productoPrecio">
+                <label>Cantidad de Docenas:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio7cantidadDocena" id="inptEjercicio7cantidadDocena">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio7()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer7.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #8</h2>
+            <p>Un algoritmo que determina el monto a pagar por el alquiler de un vehículo y el monto incluido del impuesto.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Kilometros:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio8kilometros" id="inptEjercicio8kilometros">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio8()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer8.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #9</h2>
+            <p>Un algoritmo que determina quienes son contemporáneos entre Juan, Mario y Pedro.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Edad Juan:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio9edadJuan" id="inptEjercicio9edadJuan">
+                <label>Edad Mario:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio9edadMario" id="inptEjercicio9edadMario">
+                <label>Edad Pedro:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio9edadPedro" id="inptEjercicio9edadPedro">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio9()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer9.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #10</h2>
+            <p>Un algoritmo que lea tres longitudes y determine si forman o no un triángulo.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Primer Longitud:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio10longitud1" id="inptEjercicio10longitud1">
+                <label>Segunda Longitud:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio10longitud2" id="inptEjercicio10longitud2">
+                <label>Tercera Longitud:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio10longitud3" id="inptEjercicio10longitud3">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio10()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer10.js"></script>
+    </div>
+    </div>
+    
+</body>
+</html>

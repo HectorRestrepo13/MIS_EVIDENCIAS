@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+   
+<div class="container-fluid">
+    <div class="row"><div class="col-12 justify-content-center d-flex"><h1>lista de tareas</h1></div></div>
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">ID</label>
+                <input type="text" class="form-control" id="id">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Tarea</label>
+                <input type="text" class="form-control" id="tarea">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Detalle</label>
+                <input type="text" class="form-control" id="detalle">
+              </div>
+              <button id="btnGuardar" onclick="guardar()"  class="btn btn-primary">Enviar</button>
+              <button id="btnMostrar" onclick="mostrar()"  class="btn btn-primary">Mostrar</button>
+             
+        </div>
+        <div class="col-6">
+            <table class="table" >
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tarea</th>
+                    <th scope="col">Detalle</th>
+                   
+                  </tr>
+                </thead>
+                <tbody id="miTabla">
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

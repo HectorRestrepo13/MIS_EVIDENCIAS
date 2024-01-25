@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bootstrap Local</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover" id="miTabla">
+                    <thead>
+                        <tr>
+                            <th scope="col">Identificación</th>
+                            <th scope="col">Nombre Completo</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aca va el contenido generado por javascript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <select class="form-select" aria-label="Default select example" id="miSelect" onchange="cambiar()">
+                    <option selected>Nombre del Aprendiz</option>
+                </select>
+                <div>
+                    <p id="edadAprendiz"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

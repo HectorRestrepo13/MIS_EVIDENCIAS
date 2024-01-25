@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row"><div class="col-12"><h1>Agenda de Contactos</h1></div></div>
+        <div class="row">
+            <div class="col-6" style="background-color: aliceblue; border: 2px solid black; border-radius: 5%; ">
+                
+                  <div style="display: flex; flex-direction: row;padding: 2px;margin: 5px; " class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ID</label>
+                    <div style="width: 50px;" class="pun"> <input   type="text" class="form-control" id="id"></div>
+                   
+                    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                    <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido">
+                  </div>
+                  <div class="mb-3">
+                   
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono">
+                  </div>
+                  <button id="btnGuardar" onclick="guardar()"  class="btn btn-primary">Enviar</button>
+                  <button id="btnMostrar" onclick="mostrar()"  class="btn btn-primary">Mostrar</button>
+            </div>
+            <div class="col-6">
+
+                <table class="table" >
+                    <thead>
+                      <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefono</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody id="miTabla">
+                     
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./reto.js"></script>
+</body>
+</html>

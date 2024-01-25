@@ -1,0 +1,23 @@
+[
+  {
+    "id": 99,
+    "nombre": "Anderson",
+    "apellidos": "Tasama",
+    "edad": 21,
+    "activo": true
+  },
+  {
+    "id": 13,
+    "nombre": "Freddy",
+    "apellidos": "Rivera",
+    "edad": 21,
+    "activo": false
+  },
+  {
+    "id": 74,
+    "nombre": "Montserrat",
+    "apellidos": "Gomez",
+    "edad": 17,
+    "activo": true
+  }
+]

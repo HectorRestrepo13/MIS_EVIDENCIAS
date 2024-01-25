@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taller 3</title>
+</head>
+<body>
+    <div class="divBodyBlock">
+        <div class="divTextCenter">
+            <h1>Taller 3 - John Freddy Rivera</h1>
+        </div>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #1</h2>
+            <p>Un algoritmo que acepta un ángulo en grados y visualice el tipo de ángulo correspondiente a los grados introducidos.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Grados:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio1grados" id="inptEjercicio1grados">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio1()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer1.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #2</h2>
+            <p>Un algoritmo que acepta una calificación numérica del estudiante (0-100), convierta esta calificación a su equivalente en letra y visualice la calificación correspondiente en letra.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Calificación Númerica:</label>
+                <input type="number" min="0" max="100" class="inptDesign" name="inptEjercicio2calificacionNumerica" id="inptEjercicio2calificacionNumerica">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio2()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer2.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #3</h2>
+            <p>Programa que acepta dos números reales de un usuario y un código de selección. Si el código introducido de selección es 1, entonces el programa suma los dos números introducidos previamente y se visualiza el resultado; si el código de selección es 2, los números deben ser multiplicados y visualizado el resultado; y si el código seleccionado es 3, el primer número se debe dividir por el segundo número y visualizarse el resultado</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Primer Numero:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio3numero1" id="inptEjercicio3numero1">
+                <label>Segundo Numero:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio3numero2" id="inptEjercicio3numero1">
+                <label>Operación:</label>
+                <input type="number" min="1" max="3" class="inptDesign" name="inptEjercicio3operacion" id="inptEjercicio3operacion">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio3()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer3.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #4</h2>
+            <p>Un algoritmo que lee los siguientes datos de un empleado: Nombre, Sueldo, Años de servicio, Número de cursos realizados. Calcula e imprime el Nuevo sueldo del empleado.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Nombre:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio4nombre" id="inptEjercicio4nombre">
+                <label>Sueldo:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio4sueldo" id="inptEjercicio4sueldo">
+                <label>Tiempo Trabajado:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio4tiempoTrabajado" id="inptEjercicio4tiempoTrabajado">
+                <label>Cursos Tomados:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio4cursos" id="inptEjercicio4cursos">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio4()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer4.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #5</h2>
+            <p>Un algoritmo que teniendo como entrada: Número de cuenta de ahorro y monto ahorrado (en pesos) en un mes, tenga como salida el número de cuenta, el monto ahorrado, el monto de lo ganado en interese en el mes y el nuevo monto ahorrado, bajo las siguientes condiciones: si el monto ahorrado es superior a 5.000.000 gana un interés del 2,5 %. Si el monto ahorrado es superior a 1.000.000 pero menor o igual a 5.000.000 el interés será de 2 % y en otros casos será de 1,5 %.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Numero de Cuenta:</label>
+                <input type="text" class="inptDesign" name="inptEjercicio5numeroCuenta" id="inptEjercicio5numeroCuenta">
+                <label>Monto Ahorrado:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio5montoAhorrado" id="inptEjercicio5montoAhorrado">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio5()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer5.js"></script>
+
+        <div class="divTextCenter">
+            <h2>Ejercicio #6</h2>
+            <p>Un algoritmo que lee el número de materias a cursar de un estudiante e imprima el costo de inscripción.</p>
+        </div>
+        <form>
+            <div class="divCenter">
+                <label>Materias:</label>
+                <input type="number" class="inptDesign" name="inptEjercicio6materias" id="inptEjercicio6materias">
+                <button class="btnCancelar">Cancelar</button>
+                <button class="btnEnviar" onclick="ejercicio6()">Enviar</button>
+            </div>
+        </form>
+        <script src="./ejer6.js"></script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    background-color: #E0E0E0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #FFFFFF;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px 15px 40px 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+label {
+    font-weight: bold;
+    color: #1D2520;
+}
+
+button {
+    width: 154px;
+    height: 34px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0px 5px 0px 0px;
+    font-size: 14px;
+}
+
+select {
+    display: block;
+    width: 317px;
+    border: 1.9px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 9px;
+}
+
+h2 {
+    margin-bottom: -8px;
+}
+
+.divTextCenter {
+    width: 450px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.inptDesign {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    border: 1.9px solid #E0E0E0;
+    border-radius: 5px;
+    margin: 5px 0px 10px 0px;
+}
+
+.btnCancelar {
+    background-color: #42B729;
+}
+.btnCancelar:active {
+    background-color: #2C781A;
+}
+
+.btnEnviar {
+    background-color: #1977F3;
+}
+.btnEnviar:active {
+    background-color: #0B3873;
+}

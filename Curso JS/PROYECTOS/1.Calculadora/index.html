@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Versión 1.0</title>
+</head>
+<body>
+    <div class="body-centro">
+        <div class="calculadora">
+            <div class="row-100-input">
+                <input type="text" class="resultado" name="resultado" id="resultado">
+            </div>
+            <div class="row-100">
+                <button class="operacion" onclick="porcentaje()">%</button>
+                <button class="operacion" onclick="borrar()">CE</button>
+                <button class="operacion" onclick="borrar()">C</button>
+                <button class="operacion" onclick="borrar()">&#9003;</button>
+            </div>
+            <div class="row-100">
+                <button class="operacion" onclick="fraccion()">&#8543;ₓ</button>
+                <button class="operacion" onclick="exponente()">x²</button>
+                <button class="operacion" onclick="raiz()">√</button>
+                <button class="operacion" onclick="dividir()">÷</button>
+            </div>
+            <div class="row-100">
+                <button class="boton" onclick="escribir7()">7</button>
+                <button class="boton" onclick="escribir8()">8</button>
+                <button class="boton" onclick="escribir9()">9</button>
+                <button class="operacion" onclick="multiplicar()">x</button>
+            </div>
+            <div class="row-100">
+                <button class="boton" onclick="escribir4()">4</button>
+                <button class="boton" onclick="escribir5()">5</button>
+                <button class="boton" onclick="escribir6()">6</button>
+                <button class="operacion" onclick="restar()">-</button>
+            </div>
+            <div class="row-100">
+                <button class="boton" onclick="escribir1()">1</button>
+                <button class="boton" onclick="escribir2()">2</button>
+                <button class="boton" onclick="escribir3()">3</button>
+                <button class="operacion" onclick="sumar()">+</button>
+            </div>
+            <div class="row-100">
+                <button class="boton" onclick="positivonegativo()">+/-</button>
+                <button class="boton" onclick="escribir0()">0</button>
+                <button class="boton" onclick="punto()">.</button>
+                <button class="igual" onclick="igual()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

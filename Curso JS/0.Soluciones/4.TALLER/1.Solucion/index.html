@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Taller 2 - Planetas</title>
+</head>
+
+<body class="bg-black">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="text-light mt-5">Sistema Solar</h1>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-auto">
+                <img src="./assets/media/Mercurio.webp" id="mercurio" class="img-fluid" style="width: 40px;" onmouseover="mostrarAlerta('mercurio')" onmouseleave="borrar('mercurio')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Venus.png" id="venus" class="img-fluid" style="width: 85px;" onmouseover="mostrarAlerta('venus')" onmouseleave="borrar('venus')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Tierra.png" id="tierra" class="img-fluid" style="width: 100px;" onmouseover="mostrarAlerta('tierra')" onmouseleave="borrar('tierra')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Marte.webp" id="marte" class="img-fluid" style="width: 85px;" onmouseover="mostrarAlerta('marte')" onmouseleave="borrar('marte')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Jupiter.png" id="jupiter" class="img-fluid" style="width: 150px;" onmouseover="mostrarAlerta('jupiter')" onmouseleave="borrar('jupiter')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Saturno.webp" id="saturno" class="img-fluid" style="width: 250px;" onmouseover="mostrarAlerta('saturno')" onmouseleave="borrar('saturno')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Urano.webp" id="urano" class="img-fluid" style="width: 100px;" onmouseover="mostrarAlerta('urano')" onmouseleave="borrar('urano')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Neptuno.webp" id="neptuno" class="img-fluid" style="width: 90px;" onmouseover="mostrarAlerta('neptuno')" onmouseleave="borrar('neptuno')">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/media/Pluton.webp" id="pluton" class="img-fluid" style="width: 40px;" onmouseover="mostrarAlerta('pluton')" onmouseleave="borrar('pluton')">
+            </div>
+        </div>
+        <div class="row px-5 d-flex justify-content-center">
+            <div class="col-4" id="alerta"></div>
+        </div>
+        <div class="row bg-light fixed-bottom">
+            <div class="col px-5 pt-3">
+                <p>Creado por: John Freddy Rivera Ayala<br>Todos los derechos recervados ©</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

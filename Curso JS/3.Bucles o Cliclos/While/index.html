@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclo While</title>
+</head>
+
+<body>
+    <div class="centrado">
+        <h1>Taller Ciclos 2</h1>
+
+        <h2>Ejercicio 1:</h2>
+        <p>Escriba un algoritmo que permita calcular XN, donde X es cualquier
+            numero real distinto de 0 y N cualquier entero positivo (Suponga que
+            no existe la función Math.pow())</p>
+        <div class="form">
+            <label for="Ejer1X">Valor de X:</label>
+            <input type="text" name="Ejer1X" id="Ejer1X">
+            <label for="Ejer1N">Valor de N:</label>
+            <input type="text" name="Ejer1N" id="Ejer1N">
+            <button onclick="Ejer1()">Enviar</button>
+            <div class="Resultado" id="Ejer1Resultado"></div>
+            <script src="Ejer1.js"></script>
+        </div>
+
+
+        <h2>Ejercicio 2:</h2>
+        <p>Lea una serie de números repetitivamente desde el computador y
+            calcule su promedio. La marca o bandera para el fin de lectura es el
+            numero 999</p>
+        <div class="form">
+            <button onclick="Ejer2()">Comenzar</button>
+            <div class="Resultado" id="Ejer2Resultado"></div>
+            <script src="Ejer2.js"></script>
+        </div>
+
+
+        <h2>Ejercicio 3:</h2>
+        <p>Un empleado de la tienda “Tiki Taka” realiza N ventas durante el día,
+            se requiere saber cuántas de ellas fueron mayores a $1000(Categoría
+            A), cuántas fueron mayores a $500 pero menores o iguales a
+            $1000(categoría B), y cuántas fueron menores o iguales a $500(categoría C). Además, se requiere saber el monto de lo vendido
+            en cada categoría y de forma global.</p>
+        <div class="form">
+            <label for="Ejer3VentasDia">Numero de ventas por día:</label>
+            <input type="text" name="Ejer3VentasDia" id="Ejer3VentasDia">
+            <button onclick="Ejer3()">Enviar</button>
+            <div class="Resultado">
+                <table border="1px">
+                    <tr>
+                        <th>Categoría A</th>
+                        <td id="Ejer3CatA"></td>
+                    </tr>
+                    <tr>
+                        <th>Categoría B</th>
+                        <td id="Ejer3CatB"></td>
+                    </tr>
+                    <tr>
+                        <th>Categoría C</th>
+                        <td id="Ejer3CatC"></td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td id="Ejer3Resultado"></td>
+                    </tr>
+                </table>
+            </div>
+            <script src="Ejer3.js"></script>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

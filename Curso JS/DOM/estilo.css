@@ -1,0 +1,10 @@
+.fondo1 {
+  background-color: aliceblue;
+  color: black;
+  padding: 5px;
+  border: solid 1px red;
+}
+
+.borde {
+  border: solid 4px red;
+}
